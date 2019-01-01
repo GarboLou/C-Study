@@ -1,9 +1,37 @@
 //class definition
 
-class Myclass {
-  public:
-    double length;
-    double radius;
-    
-    //construct a Myclass object
-    Myclass
+#include <stdio.h>
+class Circle 
+{
+	public:
+	double radius;
+
+	/*
+	构造函数 
+	*/
+
+	//constructor without parameter
+	//无参构造函数 
+	Circle()
+	{
+		radius = 1;
+	}
+
+	//constructor with parameter
+	//有参构造函数 
+	Circle(double newRadius)
+	{
+		radius = newRadius;
+	}
+
+	//function
+	double getArea()
+	{
+		return radius * radius * 3.14;
+	}
+};
+ 
+int main(){
+	Circle c = Circle(3);
+	printf("%lf", c.getArea());
+}
