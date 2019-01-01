@@ -1,0 +1,9 @@
+//class definition
+
+class Myclass {
+  public:
+    double length;
+    double radius;
+    
+    //construct a Myclass object
+    Myclass
